@@ -1,0 +1,50 @@
+{
+  "name": "antd-formatted-inputnumber",
+  "description": "AntD Input based component that formats numeric input according to given locale settings.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
+  },
+  "author": "İbrahim Bener",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "antd",
+    "input",
+    "number",
+    "locale",
+    "format",
+    "formatted",
+    "component"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "antd": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.0",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "antd": "^6.3.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rollup": "^4.57.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.9.3"
+  }
+}
