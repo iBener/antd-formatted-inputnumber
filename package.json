@@ -10,7 +10,9 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "demo:build": "yarn build && node scripts/build-demo.mjs",
+    "demo:dev": "yarn demo:build && python3 -m http.server 4173 -d site"
   },
   "author": "İbrahim Bener",
   "license": "MIT",
@@ -25,9 +27,9 @@
     "component"
   ],
   "peerDependencies": {
+    "antd": ">=4.0.0",
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0",
-    "antd": ">=4.0.0"
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
