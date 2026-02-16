@@ -12,7 +12,9 @@
     "build": "rollup -c",
     "prepublishOnly": "yarn build",
     "demo:build": "yarn build && node scripts/build-demo.mjs",
-    "demo:dev": "yarn demo:build && python3 -m http.server 4173 -d site"
+    "demo:dev": "yarn demo:build && http-server site -p 4173",
+    "dev": "yarn demo:dev",
+    "demo": "http-server site -p 4173"
   },
   "author": "İbrahim Bener",
   "license": "MIT",
@@ -42,6 +44,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "antd": "^6.3.0",
+    "http-server": "^14.1.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "rollup": "^4.57.1",
