@@ -4,12 +4,12 @@ AntD Input komponenti tabanlı formatlanmış sayı input komponenti.
 
 ## Kurulum
 ```bash
-yarn add formatted-input-number
+yarn add antd-formatted-inputnumber antd react react-dom
 ```
 
 ## Usage
 ```tsx
-import { FormattedInputNumber } from 'formatted-input-number';
+import { FormattedInputNumber } from 'antd-formatted-inputnumber';
 
 function App() {
   const [value, setValue] = useState<number | null>(null);
@@ -38,3 +38,5 @@ function App() {
 | notifyOnSetValue | boolean | false | Dışardan `value` set edildiğinde `onChange` çağrılıp çağrılmayacağını belirler |
 
 Diğer tüm AntD Input props'ları varsayılan olarak desteklenmektedir.
+
+> Not: `antd`, `react`, `react-dom` peer dependency olarak tanımlıdır; kullanan projede ayrıca kurulmalıdır.
